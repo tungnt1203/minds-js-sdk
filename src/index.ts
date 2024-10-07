@@ -1,15 +1,14 @@
 import Client from './client';
+import { Datasource, Datasources } from './datasources';
+import { Minds } from './minds';
+import * as Exceptions from './exceptions';
+import * as Types from './types';
 
-const client = new Client("")
-
-async function getListMinds() {
-  try {
-    // Thay '/endpoint' bằng endpoint thực tế bạn muốn gọi
-    const data = await client.datasources.drop('companies_mind1_datasource_7bfd30c14e9b475f9200df1870b80bd8_sql_skill_d11ae768-d05d-4014-9173-4f48a74012c4');
-    console.log(data);
-  } catch (error) {
-    console.error('Lỗi:', error);
-  }
-}
-
-getListMinds();
+export {
+  Client,
+  Datasource,
+  Datasources,
+  Minds,
+  Exceptions,
+  Types
+};
