@@ -8,6 +8,7 @@ export default class Client {
   public datasources: Datasources;
   public minds: Minds;
   public api: any;
+
   constructor(apiKey: string, baseUrl: string = 'https://mdb.ai') {
     this.apiKey = apiKey;
     this.baseUrl = baseUrl;
