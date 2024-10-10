@@ -3,8 +3,8 @@ import { Datasources } from './datasources';
 import { Minds } from './minds';
 
 export default class Client {
-  private apiKey: string;
-  private baseUrl: string;
+  apiKey: string;
+  baseUrl: string;
   public datasources: Datasources;
   public minds: Minds;
   public api: any;
